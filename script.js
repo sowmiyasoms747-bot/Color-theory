@@ -20,19 +20,24 @@ function initTabs() {
 
   allCards.forEach(card => {
     const tabButtons = card.querySelectorAll('.tab-btn');
+    const colorsView = card.querySelector('.card-view-colors');
+    const featuresView = card.querySelector('.card-view-features');
 
     tabButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
         const targetTab = btn.getAttribute('data-tab');
 
-        // Switch active button in this card
+        // Switch active state on buttons
         tabButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
-        if (targetTab === 'features') {
-          showToast('Features view selected');
-        } else if (targetTab === 'examples') {
-          showToast('Examples view selected');
+        if (targetTab === 'colors') {
+          if (colorsView) colorsView.classList.add('active');
+          if (featuresView) featuresView.classList.remove('active');
+        } else if (targetTab === 'features') {
+          if (colorsView) colorsView.classList.remove('active');
+          if (featuresView) featuresView.classList.add('active');
         }
       });
     });
