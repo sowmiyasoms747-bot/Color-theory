@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain and Colors — UI Design System Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ======================================================== -->
+  <!-- HERO SECTION (FULL SCREEN, RADIANT WHITE THEME & COLOR WHEEL) -->
+  <!-- ======================================================== -->
+  <section id="hero" class="hero-section hero-white-theme">
+
+    <!-- Rotating Chromatic Color Wheel Layer -->
+    <div class="color-wheel-wrapper" aria-hidden="true">
+      <div class="color-wheel-disc"></div>
+      <div class="color-wheel-glow"></div>
+      <div class="color-wheel-inner-mask"></div>
+    </div>
+
+    <!-- Floating Graphic 1: Artist with Palette (Left) -->
+    <div class="hero-floating-art float-left" aria-hidden="true">
+      <img src="assets/images/hero_artist.png" alt="Artist with color palette" class="floating-art-img artist-img">
+    </div>
+
+    <!-- Floating Graphic 2: Wooden Painter's Palette with Drops (Right) -->
+    <div class="hero-floating-art float-right" aria-hidden="true">
+      <img src="assets/images/hero_palette.png" alt="Painter's palette and brush" class="floating-art-img palette-img">
+    </div>
+
+    <!-- Hero Content Container -->
+    <div class="hero-container">
+      <h1 class="hero-title wavy-title" id="heroWavyTitle">
+        Domain & Color Themes
+      </h1>
+
+      <p class="hero-subtitle">
+        A practical, industry-proven design system guide showcasing the psychological impact, color palettes, and UX patterns across 12 modern business domains.
+      </p>
+
+      <!-- Quick Navigation Chips with Dynamic Domain Colors on Hover -->
+      <div class="quick-jump-chips">
+        <a href="#color-emotions" class="chip-btn chip-emotions-badge">🎨 Color Emotions in UX</a>
+        <a href="#domain-1" class="chip-btn" data-domain="1">01 Healthcare</a>
+        <a href="#domain-2" class="chip-btn" data-domain="2">02 Banking & Finance</a>
+        <a href="#domain-3" class="chip-btn" data-domain="3">03 E-commerce</a>
+        <a href="#domain-4" class="chip-btn" data-domain="4">04 Education</a>
+        <a href="#domain-5" class="chip-btn" data-domain="5">05 Real Estate</a>
+        <a href="#domain-6" class="chip-btn" data-domain="6">06 Food & Dining</a>
+        <a href="#domain-7" class="chip-btn" data-domain="7">07 Travel</a>
+        <a href="#domain-8" class="chip-btn" data-domain="8">08 Fashion</a>
+        <a href="#domain-9" class="chip-btn" data-domain="9">09 Fitness</a>
+        <a href="#domain-10" class="chip-btn" data-domain="10">10 Government</a>
+        <a href="#domain-11" class="chip-btn" data-domain="11">11 SaaS</a>
+        <a href="#domain-12" class="chip-btn" data-domain="12">12 Parking</a>
+      </div>
+
+      <!-- Scroll Cue to Stacked Cards -->
+      <div class="hero-scroll-cue">
+        <span class="scroll-label">Scroll to Explore</span>
+        <span class="scroll-arrow-anim">↓</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== -->
+  <!-- COLOR IT EMOTION IN UX (BLACKBOARD & STICKY NOTES CONCEPT) -->
+  <!-- ======================================================== -->
+  <section id="color-emotions" class="color-emotions-section blackboard-theme">
+    <div class="emotions-container">
+      
+      <!-- Realistic Blackboard Canvas Frame -->
+      <div class="blackboard-board">
+        <div class="blackboard-slate">
+
+          <!-- Chalkboard Header (Chalk Typography) -->
+          <div class="chalk-board-header">
+            <div class="chalk-badge">
+              <span class="chalk-icon">✦</span>
+              <span>Color Psychology in UX</span>
+            </div>
+            <h2 class="chalk-title">Color & it emotion in UX</h2>
+            <p class="chalk-subtitle">
+              12 Core Psychological Colors & Subconscious Emotional Triggers
+            </p>
+          </div>
+
+          <!-- 12 Sticky Notes Pinned to the Blackboard (4x3 Grid, All in One Frame) -->
+          <div class="blackboard-notes-grid">
+
+            <!-- 1. Red -->
+            <article class="sticky-note-card theme-red note-tilt-1" data-color="Red" data-hex="#E52538">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Red</h3>
+                  <button class="note-hex-btn" data-hex="#E52538" title="Click to copy HEX">#E52538</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Excitement</li>
+                  <li>Energy</li>
+                  <li>Love</li>
+                  <li>Strength</li>
+                  <li>Passion</li>
+                </ul>
+                <div class="note-domain-link">Domain 06: Food & Dining</div>
+              </div>
+            </article>
+
+            <!-- 2. Orange -->
+            <article class="sticky-note-card theme-orange note-tilt-2" data-color="Orange" data-hex="#F89B1D">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Orange</h3>
+                  <button class="note-hex-btn" data-hex="#F89B1D" title="Click to copy HEX">#F89B1D</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Optimism</li>
+                  <li>Warmth</li>
+                  <li>Sociability</li>
+                  <li>Spontaneity</li>
+                  <li>Adventure</li>
+                </ul>
+                <div class="note-domain-link">Domain 03: E-commerce</div>
+              </div>
+            </article>
+
+            <!-- 3. Yellow -->
+            <article class="sticky-note-card theme-yellow note-tilt-3" data-color="Yellow" data-hex="#FFCC00">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Yellow</h3>
+                  <button class="note-hex-btn" data-hex="#FFCC00" title="Click to copy HEX">#FFCC00</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Happiness</li>
+                  <li>Joyfulness</li>
+                  <li>Creativity</li>
+                  <li>Inspiration</li>
+                  <li>Positivity</li>
+                </ul>
+                <div class="note-domain-link">Domain 04: Education</div>
+              </div>
+            </article>
+
+            <!-- 4. Green -->
+            <article class="sticky-note-card theme-green note-tilt-4" data-color="Green" data-hex="#008A28">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Green</h3>
+                  <button class="note-hex-btn" data-hex="#008A28" title="Click to copy HEX">#008A28</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Balance</li>
+                  <li>Harmony</li>
+                  <li>Freshness</li>
+                  <li>Safety</li>
+                  <li>Prosperity</li>
+                </ul>
+                <div class="note-domain-link">Domain 05: Real Estate & 09: Fitness</div>
+              </div>
+            </article>
+
+            <!-- 5. Blue -->
+            <article class="sticky-note-card theme-blue note-tilt-5" data-color="Blue" data-hex="#1271B5">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Blue</h3>
+                  <button class="note-hex-btn" data-hex="#1271B5" title="Click to copy HEX">#1271B5</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Tranquility</li>
+                  <li>Relaxation</li>
+                  <li>Peace</li>
+                  <li>Trust</li>
+                  <li>Loyalty</li>
+                </ul>
+                <div class="note-domain-link">Domain 01: Health & 02: Banking</div>
+              </div>
+            </article>
+
+            <!-- 6. Turquoise -->
+            <article class="sticky-note-card theme-turquoise note-tilt-6" data-color="Turquoise" data-hex="#54C6D0">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Turquoise</h3>
+                  <button class="note-hex-btn" data-hex="#54C6D0" title="Click to copy HEX">#54C6D0</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Compassion</li>
+                  <li>Clarity</li>
+                  <li>Calmness</li>
+                  <li>Empathy</li>
+                  <li>Concentration</li>
+                </ul>
+                <div class="note-domain-link">Domain 07: Travel</div>
+              </div>
+            </article>
+
+            <!-- 7. Pink -->
+            <article class="sticky-note-card theme-pink note-tilt-7" data-color="Pink" data-hex="#FA8295">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Pink</h3>
+                  <button class="note-hex-btn" data-hex="#FA8295" title="Click to copy HEX">#FA8295</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Romance</li>
+                  <li>Kindness</li>
+                  <li>Intuition</li>
+                  <li>Innocence</li>
+                  <li>Tenderness</li>
+                </ul>
+                <div class="note-domain-link">Domain 08: Fashion & Beauty</div>
+              </div>
+            </article>
+
+            <!-- 8. Purple -->
+            <article class="sticky-note-card theme-purple note-tilt-8" data-color="Purple" data-hex="#7C007C">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Purple</h3>
+                  <button class="note-hex-btn" data-hex="#7C007C" title="Click to copy HEX">#7C007C</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Mystery</li>
+                  <li>Creativity</li>
+                  <li>Wisdom</li>
+                  <li>Wealth</li>
+                  <li>Intuition</li>
+                </ul>
+                <div class="note-domain-link">Domain 11: SaaS & AI Tech</div>
+              </div>
+            </article>
+
+            <!-- 9. Brown -->
+            <article class="sticky-note-card theme-brown note-tilt-9" data-color="Brown" data-hex="#A7542E">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Brown</h3>
+                  <button class="note-hex-btn" data-hex="#A7542E" title="Click to copy HEX">#A7542E</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Comfort</li>
+                  <li>Stability</li>
+                  <li>Honesty</li>
+                  <li>Appreciation</li>
+                  <li>Reliability</li>
+                </ul>
+                <div class="note-domain-link">Heritage & Artisan</div>
+              </div>
+            </article>
+
+            <!-- 10. Black -->
+            <article class="sticky-note-card theme-black note-tilt-10" data-color="Black" data-hex="#0A0A0A">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Black</h3>
+                  <button class="note-hex-btn" data-hex="#0A0A0A" title="Click to copy HEX">#0A0A0A</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Power</li>
+                  <li>Sophistication</li>
+                  <li>Strength</li>
+                  <li>Formality</li>
+                  <li>Authority</li>
+                </ul>
+                <div class="note-domain-link">Luxury & Executive UI</div>
+              </div>
+            </article>
+
+            <!-- 11. Gray -->
+            <article class="sticky-note-card theme-gray note-tilt-11" data-color="Gray" data-hex="#7D8489">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">Gray</h3>
+                  <button class="note-hex-btn" data-hex="#7D8489" title="Click to copy HEX">#7D8489</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Seriousness</li>
+                  <li>Wisdom</li>
+                  <li>Neutral</li>
+                  <li>Maturity</li>
+                  <li>Practical</li>
+                </ul>
+                <div class="note-domain-link">Domain 10: Civic & Govt</div>
+              </div>
+            </article>
+
+            <!-- 12. White -->
+            <article class="sticky-note-card theme-white note-tilt-12" data-color="White" data-hex="#FFFFFF">
+              <div class="sticky-tape" aria-hidden="true"></div>
+              <div class="note-card-inner">
+                <div class="note-card-top">
+                  <h3 class="note-color-name">White</h3>
+                  <button class="note-hex-btn" data-hex="#FFFFFF" title="Click to copy HEX">#FFFFFF</button>
+                </div>
+                <ul class="note-emotions-list">
+                  <li>Innocence</li>
+                  <li>Purity</li>
+                  <li>Perfection</li>
+                  <li>Cleanliness</li>
+                  <li>Clarity</li>
+                </ul>
+                <div class="note-domain-link">Minimalist Space</div>
+              </div>
+            </article>
+
+          </div><!-- /.blackboard-notes-grid -->
+
+        </div><!-- /.blackboard-slate -->
+      </div><!-- /.blackboard-board -->
+
+    </div>
+  </section>
+
+  <!-- ======================================================== -->
+  <!-- 3D CARDS DECK: STACKED PARALLAX SCROLL SECTION -->
+  <!-- ======================================================== -->
+  <main id="domain-topics" class="cards-stack-track">
+    <div class="cards-sticky-stage">
+
+      <!-- Centered Deck Container: All cards stacked in the exact same place -->
+      <div id="cardsDeck" class="cards-deck">
+
+        <!-- ========================================== -->
+        <!-- DOMAIN 01: HEALTHCARE -->
+        <!-- ========================================== -->
+        <article id="domain-1" class="domain-card" data-domain="1" data-title="Healthcare">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 01 / Healthcare</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Healthcare</h2>
+          <div class="card-slogan">Care. Connect. Heal.</div>
+          <p class="card-desc">Modern, calm and trustworthy theme for better healthcare experiences.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#0066CC" data-name="Medical Blue">
+                <div class="swatch-dot" style="background:#0066CC;"></div>
+                <span class="swatch-hex">#0066CC</span>
+              </div>
+              <div class="swatch-item" data-hex="#00A3FF" data-name="Sky Blue">
+                <div class="swatch-dot" style="background:#00A3FF;"></div>
+                <span class="swatch-hex">#00A3FF</span>
+              </div>
+              <div class="swatch-item" data-hex="#0D9488" data-name="Clinical Teal">
+                <div class="swatch-dot" style="background:#0D9488;"></div>
+                <span class="swatch-hex">#0D9488</span>
+              </div>
+              <div class="swatch-item" data-hex="#10B981" data-name="Health Green">
+                <div class="swatch-dot" style="background:#10B981;"></div>
+                <span class="swatch-hex">#10B981</span>
+              </div>
+              <div class="swatch-item" data-hex="#F8FAFC" data-name="Clean White BG">
+                <div class="swatch-dot" style="background:#F8FAFC; border:1px solid #cbd5e1;"></div>
+                <span class="swatch-hex">#F8FAFC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Trustworthy</span>
+              <span class="personality-pill">Calm</span>
+              <span class="personality-pill">Professional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_1_healthcare.png" alt="Healthcare 3D Hospital Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 02: BANKING & FINANCE -->
+    <!-- ========================================== -->
+    <article id="domain-2" class="domain-card" data-domain="2" data-title="Banking & Finance">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 02 / Banking & Finance</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Banking & Finance</h2>
+          <div class="card-slogan">Secure. Grow. Prosper.</div>
+          <p class="card-desc">A premium and confident theme for secure financial services.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#0F172A" data-name="Deep Navy Slate">
+                <div class="swatch-dot" style="background:#0F172A;"></div>
+                <span class="swatch-hex">#0F172A</span>
+              </div>
+              <div class="swatch-item" data-hex="#065F46" data-name="Wealth Emerald">
+                <div class="swatch-dot" style="background:#065F46;"></div>
+                <span class="swatch-hex">#065F46</span>
+              </div>
+              <div class="swatch-item" data-hex="#10B981" data-name="Growth Green">
+                <div class="swatch-dot" style="background:#10B981;"></div>
+                <span class="swatch-hex">#10B981</span>
+              </div>
+              <div class="swatch-item" data-hex="#E6FFFA" data-name="Mint Accent">
+                <div class="swatch-dot" style="background:#E6FFFA; border:1px solid #99f6e4;"></div>
+                <span class="swatch-hex">#E6FFFA</span>
+              </div>
+              <div class="swatch-item" data-hex="#F59E0B" data-name="Gold Asset">
+                <div class="swatch-dot" style="background:#F59E0B;"></div>
+                <span class="swatch-hex">#F59E0B</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Secure</span>
+              <span class="personality-pill">Reliable</span>
+              <span class="personality-pill">Premium</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_2_banking.png" alt="Banking & Finance 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 03: E-COMMERCE & RETAIL -->
+    <!-- ========================================== -->
+    <article id="domain-3" class="domain-card" data-domain="3" data-title="E-commerce & Retail">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 03 / E-commerce & Retail</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">E-commerce & Retail</h2>
+          <div class="card-slogan">Shop Smarter. Live Better.</div>
+          <p class="card-desc">Energetic and engaging theme for seamless shopping.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#EA580C" data-name="Action Orange">
+                <div class="swatch-dot" style="background:#EA580C;"></div>
+                <span class="swatch-hex">#EA580C</span>
+              </div>
+              <div class="swatch-item" data-hex="#E11D48" data-name="Discount Rose">
+                <div class="swatch-dot" style="background:#E11D48;"></div>
+                <span class="swatch-hex">#E11D48</span>
+              </div>
+              <div class="swatch-item" data-hex="#F59E0B" data-name="Warm Amber">
+                <div class="swatch-dot" style="background:#F59E0B;"></div>
+                <span class="swatch-hex">#F59E0B</span>
+              </div>
+              <div class="swatch-item" data-hex="#FFF7ED" data-name="Peach Highlight">
+                <div class="swatch-dot" style="background:#FFF7ED; border:1px solid #fed7aa;"></div>
+                <span class="swatch-hex">#FFF7ED</span>
+              </div>
+              <div class="swatch-item" data-hex="#18181B" data-name="Contrast Dark">
+                <div class="swatch-dot" style="background:#18181B;"></div>
+                <span class="swatch-hex">#18181B</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Vibrant</span>
+              <span class="personality-pill">Friendly</span>
+              <span class="personality-pill">Dynamic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_3_ecommerce.png" alt="E-commerce & Retail 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 04: EDUCATION -->
+    <!-- ========================================== -->
+    <article id="domain-4" class="domain-card" data-domain="4" data-title="Education">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 04 / Education</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Education</h2>
+          <div class="card-slogan">Learn. Explore. Excel.</div>
+          <p class="card-desc">A friendly and inspiring theme for better learning experiences.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#2563EB" data-name="Inspire Blue">
+                <div class="swatch-dot" style="background:#2563EB;"></div>
+                <span class="swatch-hex">#2563EB</span>
+              </div>
+              <div class="swatch-item" data-hex="#0284C7" data-name="Sky Cerulean">
+                <div class="swatch-dot" style="background:#0284C7;"></div>
+                <span class="swatch-hex">#0284C7</span>
+              </div>
+              <div class="swatch-item" data-hex="#F59E0B" data-name="Curiosity Amber">
+                <div class="swatch-dot" style="background:#F59E0B;"></div>
+                <span class="swatch-hex">#F59E0B</span>
+              </div>
+              <div class="swatch-item" data-hex="#EFF6FF" data-name="Soft Background">
+                <div class="swatch-dot" style="background:#EFF6FF; border:1px solid #bfdbfe;"></div>
+                <span class="swatch-hex">#EFF6FF</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Friendly</span>
+              <span class="personality-pill">Engaging</span>
+              <span class="personality-pill">Inspirational</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_4_education.png" alt="Education 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 05: REAL ESTATE -->
+    <!-- ========================================== -->
+    <article id="domain-5" class="domain-card" data-domain="5" data-title="Real Estate">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 05 / Real Estate</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Real Estate</h2>
+          <div class="card-slogan">Find Your Perfect Space.</div>
+          <p class="card-desc">Elegant and spacious theme for property discovery.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#9A7B56" data-name="Architectural Warmth">
+                <div class="swatch-dot" style="background:#9A7B56;"></div>
+                <span class="swatch-hex">#9A7B56</span>
+              </div>
+              <div class="swatch-item" data-hex="#1E293B" data-name="Structural Slate">
+                <div class="swatch-dot" style="background:#1E293B;"></div>
+                <span class="swatch-hex">#1E293B</span>
+              </div>
+              <div class="swatch-item" data-hex="#D4AF37" data-name="Luxury Gold">
+                <div class="swatch-dot" style="background:#D4AF37;"></div>
+                <span class="swatch-hex">#D4AF37</span>
+              </div>
+              <div class="swatch-item" data-hex="#F5F5F0" data-name="Limestone Neutral">
+                <div class="swatch-dot" style="background:#F5F5F0; border:1px solid #d6d3d1;"></div>
+                <span class="swatch-hex">#F5F5F0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Premium</span>
+              <span class="personality-pill">Elegant</span>
+              <span class="personality-pill">Trustworthy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_5_realestate.png" alt="Real Estate 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 06: FOOD & RESTAURANT -->
+    <!-- ========================================== -->
+    <article id="domain-6" class="domain-card" data-domain="6" data-title="Food & Restaurant">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 06 / Food & Restaurant</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Food & Restaurant</h2>
+          <div class="card-slogan">Good Food. Good Mood.</div>
+          <p class="card-desc">Fresh and appetizing theme for delightful dining.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#EA580C" data-name="Flame Orange">
+                <div class="swatch-dot" style="background:#EA580C;"></div>
+                <span class="swatch-hex">#EA580C</span>
+              </div>
+              <div class="swatch-item" data-hex="#DC2626" data-name="Appetite Red">
+                <div class="swatch-dot" style="background:#DC2626;"></div>
+                <span class="swatch-hex">#DC2626</span>
+              </div>
+              <div class="swatch-item" data-hex="#F59E0B" data-name="Golden Mustard">
+                <div class="swatch-dot" style="background:#F59E0B;"></div>
+                <span class="swatch-hex">#F59E0B</span>
+              </div>
+              <div class="swatch-item" data-hex="#FFF5F2" data-name="Warm Cream BG">
+                <div class="swatch-dot" style="background:#FFF5F2; border:1px solid #FFDBD1;"></div>
+                <span class="swatch-hex">#FFF5F2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Appetizing</span>
+              <span class="personality-pill">Energetic</span>
+              <span class="personality-pill">Delicious</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_6_food.png" alt="Food & Restaurant 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 07: TRAVEL & TOURISM -->
+    <!-- ========================================== -->
+    <article id="domain-7" class="domain-card" data-domain="7" data-title="Travel & Tourism">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 07 / Travel & Tourism</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Travel & Tourism</h2>
+          <div class="card-slogan">Explore More. Travel Better.</div>
+          <p class="card-desc">Refreshing theme for unforgettable journeys.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#0284C7" data-name="Ocean Azure">
+                <div class="swatch-dot" style="background:#0284C7;"></div>
+                <span class="swatch-hex">#0284C7</span>
+              </div>
+              <div class="swatch-item" data-hex="#059669" data-name="Island Emerald">
+                <div class="swatch-dot" style="background:#059669;"></div>
+                <span class="swatch-hex">#059669</span>
+              </div>
+              <div class="swatch-item" data-hex="#FBBF24" data-name="Sunshine Gold">
+                <div class="swatch-dot" style="background:#FBBF24;"></div>
+                <span class="swatch-hex">#FBBF24</span>
+              </div>
+              <div class="swatch-item" data-hex="#F0F9FF" data-name="Sky Breeze BG">
+                <div class="swatch-dot" style="background:#F0F9FF; border:1px solid #bae6fd;"></div>
+                <span class="swatch-hex">#F0F9FF</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Adventurous</span>
+              <span class="personality-pill">Free</span>
+              <span class="personality-pill">Relaxing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_7_travel.png" alt="Travel & Tourism 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 08: FASHION & BEAUTY -->
+    <!-- ========================================== -->
+    <article id="domain-8" class="domain-card" data-domain="8" data-title="Fashion & Beauty">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 08 / Fashion & Beauty</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Fashion & Beauty</h2>
+          <div class="card-slogan">Look Good. Feel Great.</div>
+          <p class="card-desc">Stylish and elegant theme for modern lifestyles.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#E11D48" data-name="Crimson Chic">
+                <div class="swatch-dot" style="background:#E11D48;"></div>
+                <span class="swatch-hex">#E11D48</span>
+              </div>
+              <div class="swatch-item" data-hex="#881337" data-name="Velvet Burgundy">
+                <div class="swatch-dot" style="background:#881337;"></div>
+                <span class="swatch-hex">#881337</span>
+              </div>
+              <div class="swatch-item" data-hex="#D4AF37" data-name="Champagne Gold">
+                <div class="swatch-dot" style="background:#D4AF37;"></div>
+                <span class="swatch-hex">#D4AF37</span>
+              </div>
+              <div class="swatch-item" data-hex="#FFF1F2" data-name="Blush Silk BG">
+                <div class="swatch-dot" style="background:#FFF1F2; border:1px solid #fecdd3;"></div>
+                <span class="swatch-hex">#FFF1F2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Stylish</span>
+              <span class="personality-pill">Elegant</span>
+              <span class="personality-pill">Trendy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_8_fashion.png" alt="Fashion & Beauty 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 09: FITNESS & WELLNESS -->
+    <!-- ========================================== -->
+    <article id="domain-9" class="domain-card" data-domain="9" data-title="Fitness & Wellness">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 09 / Fitness & Wellness</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Fitness & Wellness</h2>
+          <div class="card-slogan">Be Healthy. Be Strong.</div>
+          <p class="card-desc">Energetic theme for a healthier and active life.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#84CC16" data-name="Lime Energy">
+                <div class="swatch-dot" style="background:#84CC16;"></div>
+                <span class="swatch-hex">#84CC16</span>
+              </div>
+              <div class="swatch-item" data-hex="#0A0A0A" data-name="Core Obsidian">
+                <div class="swatch-dot" style="background:#0A0A0A;"></div>
+                <span class="swatch-hex">#0A0A0A</span>
+              </div>
+              <div class="swatch-item" data-hex="#F43F5E" data-name="Heartbeat Rose">
+                <div class="swatch-dot" style="background:#F43F5E;"></div>
+                <span class="swatch-hex">#F43F5E</span>
+              </div>
+              <div class="swatch-item" data-hex="#F7FEE7" data-name="Vitality Mint BG">
+                <div class="swatch-dot" style="background:#F7FEE7; border:1px solid #d9f99d;"></div>
+                <span class="swatch-hex">#F7FEE7</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Energetic</span>
+              <span class="personality-pill">Motivating</span>
+              <span class="personality-pill">Active</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_9_fitness.png" alt="Fitness & Wellness 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 10: GOVERNMENT SERVICES -->
+    <!-- ========================================== -->
+    <article id="domain-10" class="domain-card" data-domain="10" data-title="Government Services">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 10 / Government Services</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Government Services</h2>
+          <div class="card-slogan">Serve Better. Live Better.</div>
+          <p class="card-desc">Clean and formal theme for public services.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#1E3A8A" data-name="Civic Blue">
+                <div class="swatch-dot" style="background:#1E3A8A;"></div>
+                <span class="swatch-hex">#1E3A8A</span>
+              </div>
+              <div class="swatch-item" data-hex="#334155" data-name="Official Slate">
+                <div class="swatch-dot" style="background:#334155;"></div>
+                <span class="swatch-hex">#334155</span>
+              </div>
+              <div class="swatch-item" data-hex="#15803D" data-name="Approved Green">
+                <div class="swatch-dot" style="background:#15803D;"></div>
+                <span class="swatch-hex">#15803D</span>
+              </div>
+              <div class="swatch-item" data-hex="#F8FAFC" data-name="Clean White BG">
+                <div class="swatch-dot" style="background:#F8FAFC; border:1px solid #cbd5e1;"></div>
+                <span class="swatch-hex">#F8FAFC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Reliable</span>
+              <span class="personality-pill">Official</span>
+              <span class="personality-pill">Transparent</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_10_government.png" alt="Government Services 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 11: SAAS & BUSINESS -->
+    <!-- ========================================== -->
+    <article id="domain-11" class="domain-card" data-domain="11" data-title="SaaS & Business Software">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 11 / SaaS & Business Software</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">SaaS & Business</h2>
+          <div class="card-slogan">Work Smarter. Achieve More.</div>
+          <p class="card-desc">Modern and productive theme for business solutions.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#4F46E5" data-name="Indigo Power">
+                <div class="swatch-dot" style="background:#4F46E5;"></div>
+                <span class="swatch-hex">#4F46E5</span>
+              </div>
+              <div class="swatch-item" data-hex="#7C3AED" data-name="Violet Spark">
+                <div class="swatch-dot" style="background:#7C3AED;"></div>
+                <span class="swatch-hex">#7C3AED</span>
+              </div>
+              <div class="swatch-item" data-hex="#10B981" data-name="Uptime Green">
+                <div class="swatch-dot" style="background:#10B981;"></div>
+                <span class="swatch-hex">#10B981</span>
+              </div>
+              <div class="swatch-item" data-hex="#F8FAFC" data-name="Clean White BG">
+                <div class="swatch-dot" style="background:#F8FAFC; border:1px solid #cbd5e1;"></div>
+                <span class="swatch-hex">#F8FAFC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Productive</span>
+              <span class="personality-pill">Innovative</span>
+              <span class="personality-pill">Efficient</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_11_saas.png" alt="SaaS & Business 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========================================== -->
+    <!-- DOMAIN 12: PARKING & MOBILITY -->
+    <!-- ========================================== -->
+    <article id="domain-12" class="domain-card" data-domain="12" data-title="Parking & Mobility">
+      <div class="card-topbar">
+        <span class="domain-badge">Domain 12 / Parking & Mobility</span>
+        <div class="card-tabs">
+          <button class="tab-btn active" data-tab="colors"><span class="btn-icon">🎨</span> Colors</button>
+          <button class="tab-btn" data-tab="features"><span class="btn-icon">★</span> Features</button>
+          <button class="tab-btn" data-tab="examples"><span class="btn-icon">🖼</span> Examples</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="card-left">
+          <h2 class="card-title">Parking & Mobility</h2>
+          <div class="card-slogan">Find. Park. Go.</div>
+          <p class="card-desc">Smart and convenient theme for hassle-free parking.</p>
+
+          <div class="palette-section">
+            <div class="section-label">Color Palette</div>
+            <div class="swatches-row">
+              <div class="swatch-item" data-hex="#2563EB" data-name="Signal Blue">
+                <div class="swatch-dot" style="background:#2563EB;"></div>
+                <span class="swatch-hex">#2563EB</span>
+              </div>
+              <div class="swatch-item" data-hex="#10B981" data-name="Spot Open Green">
+                <div class="swatch-dot" style="background:#10B981;"></div>
+                <span class="swatch-hex">#10B981</span>
+              </div>
+              <div class="swatch-item" data-hex="#1E293B" data-name="Asphalt Slate">
+                <div class="swatch-dot" style="background:#1E293B;"></div>
+                <span class="swatch-hex">#1E293B</span>
+              </div>
+              <div class="swatch-item" data-hex="#EFF6FF" data-name="Mobility Sky BG">
+                <div class="swatch-dot" style="background:#EFF6FF; border:1px solid #bfdbfe;"></div>
+                <span class="swatch-hex">#EFF6FF</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality-section">
+            <div class="section-label">Design Personality</div>
+            <div class="personality-row">
+              <span class="personality-pill">Smart</span>
+              <span class="personality-pill">Convenient</span>
+              <span class="personality-pill">Modern</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <img src="assets/images/ill_12_parking.png" alt="Parking & Mobility 3D Illustration" class="illustration-img" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+      </div><!-- /.cards-deck -->
+    </div><!-- /.cards-sticky-stage -->
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER (DARK THEME) -->
+  <!-- ========================================== -->
+  <footer style="background:#07080C; border-top:1px solid rgba(255, 255, 255, 0.1); padding:3.5rem 1.5rem; text-align:center; position:relative; z-index:10;">
+    <div style="max-width:900px; margin:0 auto;">
+      <div style="font-weight:800; font-size:1.15rem; color:#F8FAFC; margin-bottom:0.5rem; letter-spacing:-0.02em;">Domain and Colors — Complete UI Design System</div>
+      <p style="font-size:0.85rem; color:#94A3B8; margin-bottom:1.5rem;">
+        Engineered with clean separation of concerns: HTML (Structure), CSS (Design & Tokens), JS (Interactions).
+      </p>
+      <div style="font-size:0.75rem; font-family:var(--font-mono); color:#64748B; margin-bottom:1.25rem;">
+        12 Domains • 60+ Tested Hex Codes • Responsive & Accessible
+      </div>
+      <div style="display:flex; justify-content:center; align-items:center; gap:1.75rem; font-size:0.85rem;">
+        <a href="#color-emotions" style="color:#60A5FA; text-decoration:none; font-weight:600; transition:color 0.2s ease;">🎨 Color Emotions in UX ↑</a>
+        <span style="color:#334155;">•</span>
+        <a href="#hero" style="color:#94A3B8; text-decoration:none; font-weight:500; transition:color 0.2s ease;">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Element for Copying HEX -->
+  <div id="copyToast" class="copy-toast">
+    <span style="color:#10b981; font-weight:800;">✓</span> <span>HEX Copied!</span>
+  </div>
+
+</body>
+</html>
