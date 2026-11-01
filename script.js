@@ -319,6 +319,18 @@ function initStackedDeck() {
   chips.forEach((chip) => {
     chip.addEventListener('click', (e) => {
       const href = chip.getAttribute('href');
+      if (href === '#color-theory') {
+        e.preventDefault();
+        const theorySec = document.getElementById('color-theory');
+        if (theorySec) {
+          const theoryTop = theorySec.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop);
+          window.scrollTo({
+            top: theoryTop,
+            behavior: 'smooth'
+          });
+        }
+        return;
+      }
       if (href === '#color-emotions') {
         e.preventDefault();
         const emotionsSec = document.getElementById('color-emotions');
